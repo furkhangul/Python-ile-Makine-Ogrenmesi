@@ -53,3 +53,6 @@ kernel: verileri başka uzaay taşıyarak daha karmaşık ilişkileri yakalamak 
 -----------------------------------
 Ölçeklendirme kullanılması önemlidir çünkü svr büyük- küçük sayılara duyarlıdır.
 """
+
+#Not: Hangi regresyon modelini kullanacağımızı kendimiz belirliyoruz.
+#Not2: https://scikit-learn.org/ sitesi üzerinden araştırma yap.
