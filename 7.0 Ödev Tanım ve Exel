@@ -1,0 +1,13 @@
+"""
+
+Ödev verilerin işlenip sınıflandırılmasının ardından verilerin en doğru
+sınıflandırmasını yapmasını ve  görselleştirmesini sağlamak .
+"""
+
+
+
+#Kodu okumak için yalnızca exel okuma işlemini gerçekleştirmemiz gerekmektedir.
+import pandas as pd
+
+veriler = pd.read_excel("Iris.xls")
+#Şelinde yazmak ve okunabilirilik adına ödev bölümünde bölümlere ayırmak.
