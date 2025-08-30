@@ -4,6 +4,7 @@ import numpy as np
 
 veriler = pd.read_excel('Iris.xls')
 
+
 # Bağımsız ve bağımlı değişkenler
 x = veriler.iloc[:, 1:4].values
 y = veriler.iloc[:, 4].values
