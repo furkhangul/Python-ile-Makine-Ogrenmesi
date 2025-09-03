@@ -1,0 +1,28 @@
+"""
+Apriori algoritması makine öğrenmesinde veri madenciliği alanında geliştirilmiş ve birliktelik kurallarını çıkarmak için kullanılan temel yöntemlerden biridir.  
+Özellikle büyük miktarda verinin bulunduğu alışveriş sistemlerinde müşteri davranışlarını anlamak ve ürünler arasındaki gizli ilişkileri ortaya çıkarmak için tercih edilir.  
+
+Algoritmanın çıkış noktası sık geçen öğe kümelerinin bulunmasıdır.  
+Bir öğe kümesinin sık kabul edilebilmesi için belirlenen minimum destek değerinin üzerinde olması gerekir.  
+Destek değeri bir öğe kümesinin veri tabanında ne sıklıkla tekrar ettiğini gösterir.  
+
+Apriori algoritması önce tekli öğelerle başlar.  
+Veri tabanında hangi öğelerin sık geçtiğini hesaplar ve destek değeri düşük olanları eler.  
+Daha sonra sık bulunan bu tekli öğeler birleştirilerek ikili öğe kümeleri oluşturulur.  
+Bu süreç adım adım ilerler ve her seferinde daha büyük kümeler oluşturulur.  
+Ancak destek değeri yeterli olmayan kümeler her adımda elendiği için işlem daha verimli hale gelir.  
+
+Sık öğe kümeleri elde edildikten sonra bu kümelerden birliktelik kuralları üretilir.  
+Bir kuralın güçlü kabul edilmesi için sadece destek oranı yeterli değildir.  
+Ayrıca güven oranı da hesaplanır.  
+Güven değeri bir öğe alındığında diğerinin de alınma olasılığını gösterir.  
+Bunun yanında kaldırma değeri de kullanılır.  
+Kaldırma değeri iki öğe arasındaki bağımsızlıktan ne kadar sapma olduğunu ölçer ve ilişkilerin gerçekten anlamlı olup olmadığını ortaya koyar.  
+
+Apriori algoritması market sepeti analizi dışında da birçok alanda kullanılabilir.  
+Örneğin web sayfası ziyaretlerinin analizinde, tıbbi verilerde hastalık ile semptom arasındaki ilişkilerin bulunmasında, biyoinformatikte genler arasındaki bağlantıların incelenmesinde ve hatta sosyal medya etkileşimlerinde uygulanabilir.  
+
+Sonuç olarak Apriori algoritması veriler arasındaki gizli ilişkileri ortaya çıkaran güçlü bir yöntemdir.  
+Ancak büyük veri setlerinde hesaplama maliyeti artabilir ve bu durum algoritmanın daha yavaş çalışmasına sebep olabilir.  
+Buna rağmen pratikte birçok gerçek dünya probleminde uygulanmaya devam eden ve temel kavramları anlaşılır olan bir algoritmadır.  
+"""
