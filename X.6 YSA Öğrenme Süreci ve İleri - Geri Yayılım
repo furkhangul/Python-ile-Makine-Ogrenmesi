@@ -1,0 +1,55 @@
+"""
+YAPAY SİNİR AĞLARINDA ÖĞRENME SÜRECİ
+
+Yapay sinir ağları, veriyi işleyip doğru çıktılar üretmek için ağırlıkları öğrenir.
+Bu öğrenme süreci 2 ana aşamadan oluşur:
+1. İleri Yayılım
+2. Geri Yayılım 
+
+Amaç: Modelin çıktısı ile gerçek değer arasındaki farkı yani hatayı en aza indirmek.
+
+1. İLERİ YAYILIM 
+
+Veri, giriş katmanından başlayarak sinir ağı boyunca katman katman ileri doğru akar.
+
+Her nöronda:
+- Girdiler ile ağırlıklar çarpılır
+- Toplam hesaplanır
+- Aktivasyon fonksiyonu uygulanır → Non-lineer çıktı elde edilir
+
+Bu işlem, çıktı katmanına kadar devam eder.
+
+
+Çıktı = Tahmin edilen değer 
+Sonra bu çıktı ile gerçek değer arasındaki fark hesaplanır → Loss
+
+Loss = Hata fonksiyonu
+
+2. GERİ YAYILIM 
+
+Amaç: Hesaplanan hataya göre ağırlıkları güncellemek.
+
+Geri yayılım, zincir kuralı ile hata bilgisini katmanlara geri yayar.
+
+Her ağırlığın, toplam hata üzerindeki etkisi hesaplanır → Türev alınır.
+
+∂Loss / ∂W → Bu ağırlığın hatayı ne kadar etkilediğini gösterir
+
+Ağırlık güncellemesi yapılır:
+Yeni_W = W - ÖğrenmeOranı × hata/oran
+
+Bu işlem için 
+- Önce çıktı katmanından başlar
+- Gizli katmanlara doğru geriye doğru devam eder
+
+Bu süreç, çok sayıda örnek ve çok sayıda tekrar ile tekrarlanır.
+
+ÖĞRENME SÜRECİ ÖZETİ
+
+1. İleri yayılım ile çıktı hesaplanır
+2. Çıktı ile gerçek değer karşılaştırılır → Loss bulunur
+3. Geri yayılım ile ağırlıklar güncellenir
+4. Hata azalana kadar bu süreç döngü şeklinde devam eder
+
+Bu döngü, modelin veriyi öğrenmesini sağlar.
+"""
